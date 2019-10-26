@@ -23,7 +23,7 @@
                                 </constraints>
                                 <state key="normal" image="Record"/>
                                 <connections>
-                                    <action selector="startRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u9F-yZ-hWs"/>
+                                    <action selector="recordButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y4K-TB-HKH"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x4H-8L-caf" userLabel="Recording Info Label">
@@ -40,7 +40,7 @@
                                 </constraints>
                                 <state key="normal" image="StopRecording"/>
                                 <connections>
-                                    <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="btX-Fv-Waz"/>
+                                    <action selector="stopButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XuL-kL-wjX"/>
                                 </connections>
                             </button>
                         </subviews>

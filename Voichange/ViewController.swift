@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     
@@ -16,23 +17,67 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var recordingInfoLabel: UILabel!
     
+    var recordingSession: AVAudioSession!
+    
+    var audioRecorder: AVAudioRecorder!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         stopRecordingButton.isEnabled = false
+        recordingSession = AVAudioSession.sharedInstance()
     }
 
-    @IBAction func startRecording(_ sender: Any) {
-        print("Start recording")
-        recordingButton.isEnabled = false
-        stopRecordingButton.isEnabled = true
-        recordingInfoLabel.text = "Recording voice.."
+    @IBAction func recordButtonTapped(_ sender: Any) {
+        do {
+            try recordingSession.setCategory(AVAudioSession.Category.playAndRecord, mode: AVAudioSession.Mode.default, options: AVAudioSession.CategoryOptions.defaultToSpeaker)
+            try recordingSession.setActive(true)
+            recordingSession.requestRecordPermission() {
+                [unowned self] allowed in
+                DispatchQueue.main.async {
+                    if allowed {
+                        self.recordingButton.isEnabled = false
+                        self.stopRecordingButton.isEnabled = true
+                        self.recordingInfoLabel.text = "Recording voice.."
+                        self.startRecording()
+                    } else {
+                        print("User doesn't give permission")
+                    }
+                }
+            }
+        } catch{
+            print("Error: \(error)")
+        }
     }
     
-    @IBAction func stopRecording(_ sender: Any) {
-        print("Stop recording")
+    @IBAction func stopButtonTapped(_ sender: Any) {
         recordingButton.isEnabled = true
         stopRecordingButton.isEnabled = false
         recordingInfoLabel.text = "Tap to record"
+        stopRecording()
+    }
+    
+    func startRecording(){
+        let dirPath = NSSearchPathForDirectoriesInDomains(.documentDirectory,.userDomainMask, true)[0] as String
+        let recordingName = "recordedVoice.wav"
+        let pathArray = [dirPath, recordingName]
+        let filePath = URL(string: pathArray.joined(separator: "/"))
+        do {
+            try audioRecorder = AVAudioRecorder(url: filePath!, settings: [:])
+            audioRecorder.isMeteringEnabled = true
+            audioRecorder.prepareToRecord()
+            audioRecorder.record()
+        } catch{
+            print("Error: \(error)")
+        }
+    }
+    
+    func stopRecording() {
+        audioRecorder.stop()
+        do {
+            try recordingSession.setActive(false)
+        }catch {
+            print("Error: \(error)")
+        }
     }
     
 }
