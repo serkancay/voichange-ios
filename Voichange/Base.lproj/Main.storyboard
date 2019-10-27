@@ -72,7 +72,33 @@
                     <view key="view" contentMode="scaleToFill" id="jqX-TF-W6d">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aRc-rm-UXp" userLabel="Vertical Stack View">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kxt-h9-kWA" userLabel="Horizontal Stack View">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Od5-wA-edX">
+                                                <rect key="frame" x="0.0" y="0.0" width="260" height="818"/>
+                                                <state key="normal" title="Button" image="Rabbit"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGz-Mg-iJK">
+                                                <rect key="frame" x="260" y="0.0" width="154" height="818"/>
+                                                <state key="normal" title="Button" image="Snail"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="QE9-JO-EeQ" firstAttribute="bottom" secondItem="aRc-rm-UXp" secondAttribute="bottom" id="5px-g9-aqg"/>
+                            <constraint firstItem="aRc-rm-UXp" firstAttribute="leading" secondItem="QE9-JO-EeQ" secondAttribute="leading" id="7Au-EA-d3j"/>
+                            <constraint firstItem="QE9-JO-EeQ" firstAttribute="trailing" secondItem="aRc-rm-UXp" secondAttribute="trailing" id="Mi5-u8-Zme"/>
+                            <constraint firstItem="aRc-rm-UXp" firstAttribute="top" secondItem="QE9-JO-EeQ" secondAttribute="top" id="kWL-PU-j12"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="QE9-JO-EeQ"/>
                     </view>
                 </viewController>
@@ -82,7 +108,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Rabbit" width="100" height="100"/>
         <image name="Record" width="100" height="100"/>
+        <image name="Snail" width="100" height="100"/>
         <image name="StopRecording" width="50" height="50"/>
     </resources>
 </document>
