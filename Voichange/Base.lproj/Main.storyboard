@@ -41,6 +41,7 @@
                                 <state key="normal" image="StopRecording"/>
                                 <connections>
                                     <action selector="stopButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XuL-kL-wjX"/>
+                                    <segue destination="Hoe-VG-cnx" kind="show" id="O48-5U-70i"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -75,17 +76,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aRc-rm-UXp" userLabel="Vertical Stack View">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kxt-h9-kWA" userLabel="Horizontal Stack View">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Od5-wA-edX">
-                                                <rect key="frame" x="0.0" y="0.0" width="260" height="818"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="260" height="774"/>
                                                 <state key="normal" title="Button" image="Rabbit"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGz-Mg-iJK">
-                                                <rect key="frame" x="260" y="0.0" width="154" height="818"/>
+                                                <rect key="frame" x="260" y="0.0" width="154" height="774"/>
                                                 <state key="normal" title="Button" image="Snail"/>
                                             </button>
                                         </subviews>
