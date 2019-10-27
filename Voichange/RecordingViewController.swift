@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RecordingViewController.swift
 //  Voichange
 //
 //  Created by S.Serkan Çay on 26.10.2019.
@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController {
+class RecordingViewController: UIViewController {
     
     @IBOutlet weak var recordingButton: UIButton!
     
