@@ -55,6 +55,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Akc-iL-clx"/>
                     <connections>
                         <outlet property="recordingButton" destination="tpb-vr-yFx" id="oZQ-3m-6FB"/>
                         <outlet property="recordingInfoLabel" destination="x4H-8L-caf" id="Fqq-9c-yH5"/>
@@ -63,7 +64,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="94"/>
+            <point key="canvasLocation" x="1047.8260869565217" y="93.75"/>
         </scene>
         <!--Effects View Controller-->
         <scene sceneID="0f2-bJ-nCd">
@@ -101,10 +102,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="QE9-JO-EeQ"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Bba-tB-xdl"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bks-f0-kqF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1106" y="94"/>
+            <point key="canvasLocation" x="2015.9420289855075" y="93.75"/>
         </scene>
     </scenes>
     <resources>
