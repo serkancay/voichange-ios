@@ -84,36 +84,54 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Od5-wA-edX" userLabel="Fast Button">
                                                 <rect key="frame" x="0.0" y="0.0" width="207" height="193.5"/>
                                                 <state key="normal" image="Rabbit"/>
+                                                <connections>
+                                                    <action selector="playSoundButtonsTapped:" destination="Hoe-VG-cnx" eventType="touchUpInside" id="ENp-Rc-vcC"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGz-Mg-iJK" userLabel="Slow Button">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGz-Mg-iJK" userLabel="Slow Button">
                                                 <rect key="frame" x="207" y="0.0" width="207" height="193.5"/>
                                                 <state key="normal" image="Snail"/>
+                                                <connections>
+                                                    <action selector="playSoundButtonsTapped:" destination="Hoe-VG-cnx" eventType="touchUpInside" id="mqg-bb-Qm0"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xmz-ja-Hyw" userLabel="Horizontal Stack View">
                                         <rect key="frame" x="0.0" y="193.5" width="414" height="193.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q1g-As-5eE" userLabel="Low Pitch Button">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q1g-As-5eE" userLabel="Low Pitch Button">
                                                 <rect key="frame" x="0.0" y="0.0" width="207" height="193.5"/>
                                                 <state key="normal" image="Chipmunk"/>
+                                                <connections>
+                                                    <action selector="playSoundButtonsTapped:" destination="Hoe-VG-cnx" eventType="touchUpInside" id="g3I-wk-Q69"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UdJ-ZM-owE" userLabel="High Pitch Button">
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UdJ-ZM-owE" userLabel="High Pitch Button">
                                                 <rect key="frame" x="207" y="0.0" width="207" height="193.5"/>
                                                 <state key="normal" image="Darthvader"/>
+                                                <connections>
+                                                    <action selector="playSoundButtonsTapped:" destination="Hoe-VG-cnx" eventType="touchUpInside" id="1JP-TA-rzt"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0CU-0T-NiG" userLabel="Horizontal Stack View">
                                         <rect key="frame" x="0.0" y="387" width="414" height="193.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5E-Zr-Fvi" userLabel="Reverb Button">
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5E-Zr-Fvi" userLabel="Reverb Button">
                                                 <rect key="frame" x="0.0" y="0.0" width="207" height="193.5"/>
                                                 <state key="normal" image="Echo"/>
+                                                <connections>
+                                                    <action selector="playSoundButtonsTapped:" destination="Hoe-VG-cnx" eventType="touchUpInside" id="mvo-0I-BJ9"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u30-du-qKg" userLabel="Echo Button">
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u30-du-qKg" userLabel="Echo Button">
                                                 <rect key="frame" x="207" y="0.0" width="207" height="193.5"/>
                                                 <state key="normal" image="Reverb"/>
+                                                <connections>
+                                                    <action selector="playSoundButtonsTapped:" destination="Hoe-VG-cnx" eventType="touchUpInside" id="m50-ib-nMV"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
