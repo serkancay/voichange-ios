@@ -10,6 +10,8 @@ import UIKit
 
 class EffectsViewController: UIViewController {
 
+    var recordedVoiceUrl: URL!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
