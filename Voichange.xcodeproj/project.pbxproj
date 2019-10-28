@@ -14,6 +14,7 @@
 		C9ABC55F23649668002EB567 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9ABC55E23649668002EB567 /* Assets.xcassets */; };
 		C9ABC56223649668002EB567 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9ABC56023649668002EB567 /* LaunchScreen.storyboard */; };
 		C9ABC56A2365B532002EB567 /* EffectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ABC5692365B532002EB567 /* EffectsViewController.swift */; };
+		C9ABC56C2366DE67002EB567 /* EffectsViewController+Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ABC56B2366DE67002EB567 /* EffectsViewController+Audio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		C9ABC56123649668002EB567 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9ABC56323649668002EB567 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9ABC5692365B532002EB567 /* EffectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectsViewController.swift; sourceTree = "<group>"; };
+		C9ABC56B2366DE67002EB567 /* EffectsViewController+Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EffectsViewController+Audio.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				C9ABC56023649668002EB567 /* LaunchScreen.storyboard */,
 				C9ABC56323649668002EB567 /* Info.plist */,
 				C9ABC5692365B532002EB567 /* EffectsViewController.swift */,
+				C9ABC56B2366DE67002EB567 /* EffectsViewController+Audio.swift */,
 			);
 			path = Voichange;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9ABC55A23649663002EB567 /* RecordingViewController.swift in Sources */,
+				C9ABC56C2366DE67002EB567 /* EffectsViewController+Audio.swift in Sources */,
 				C9ABC56A2365B532002EB567 /* EffectsViewController.swift in Sources */,
 				C9ABC55623649663002EB567 /* AppDelegate.swift in Sources */,
 				C9ABC55823649663002EB567 /* SceneDelegate.swift in Sources */,
