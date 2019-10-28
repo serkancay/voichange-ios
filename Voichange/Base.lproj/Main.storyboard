@@ -138,6 +138,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vas-Qq-eu8" userLabel="Stop Button">
                                         <rect key="frame" x="0.0" y="580.5" width="414" height="193.5"/>
                                         <state key="normal" image="StopRecording"/>
+                                        <connections>
+                                            <action selector="stopPlayingButtonTapped:" destination="Hoe-VG-cnx" eventType="touchUpInside" id="Zug-um-Kub"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

@@ -45,6 +45,10 @@ class EffectsViewController: UIViewController {
         configureUI(.playing)
     }
     
+    @IBAction func stopPlayingButtonTapped(_ sender: AnyObject) {
+        stopAudio()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupAudio()
