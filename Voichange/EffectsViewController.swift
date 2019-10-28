@@ -30,9 +30,9 @@ class EffectsViewController: UIViewController {
     @IBAction func playSoundButtonsTapped(_ sender: UIButton) {
         switch(ButtonType(rawValue: sender.tag)!) {
         case .slow:
-            playSound(rate: 0.5)
-        case .fast:
             playSound(rate: 1.5)
+        case .fast:
+            playSound(rate: 0.5)
         case .high:
             playSound(pitch: 1000)
         case .low:
