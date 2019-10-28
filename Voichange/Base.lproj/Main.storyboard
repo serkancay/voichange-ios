@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Recording View Controller-->
+        <!--Voichange-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="RecordingViewController" customModule="Voichange" customModuleProvider="target" sceneMemberID="viewController">
@@ -55,7 +55,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Akc-iL-clx"/>
+                    <navigationItem key="navigationItem" title="Voichange" id="Akc-iL-clx"/>
                     <connections>
                         <outlet property="recordingButton" destination="tpb-vr-yFx" id="oZQ-3m-6FB"/>
                         <outlet property="recordingInfoLabel" destination="x4H-8L-caf" id="Fqq-9c-yH5"/>
