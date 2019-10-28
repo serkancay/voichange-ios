@@ -42,6 +42,7 @@ class EffectsViewController: UIViewController {
         case .reverb:
             playSound(reverb: true)
         }
+        configureUI(.playing)
     }
     
     override func viewDidLoad() {
